@@ -1,5 +1,5 @@
 # To run this TO-Do App on your device
-
+![alt text](/src/assets/Screenshot%20from%202024-08-31%2023-19-40.png)
 ## pre-requisite
 
 - node installed on your device

@@ -144,7 +144,7 @@ function App() {
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}
             value="*"
-            onClick={() => ButtonHandle("+")}
+            onClick={() => ButtonHandle("*")}
           />
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}

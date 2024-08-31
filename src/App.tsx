@@ -56,7 +56,7 @@ function App() {
 
   return (
     <>
-      <div className="container mx-auto cont w-1/3 bg-zinc-600 rounded-3xl overflow-hidden">
+      <div className="cont mx-auto bg-zinc-600 rounded-3xl overflow-hidden">
         {/* Label for App */}
         <h1 className=" text-4xl font-bold text-white text-center py-3">
           <i className="fa-solid fa-calculator"></i>

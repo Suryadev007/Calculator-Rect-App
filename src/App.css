@@ -14,8 +14,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100%;
-  width: 100%;
   background-image: url("https://t3.ftcdn.net/jpg/04/83/90/18/360_F_483901821_46VsNR67uJC3xIKQN4aaxR6GtAZhx9G8.jpg");
   background-size: cover;
   background-position: center;

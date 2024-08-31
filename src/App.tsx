@@ -8,8 +8,8 @@ import NerDamer from "nerdamer";
 function App() {
   const [Number, setNumber] = useState("");
   const [Result, setResult] = useState([{ val: "", res: "" }]);
-  const ButtonHandle = (e) => {
-    setNumber(Number + e.target.value);
+  const ButtonHandle = (value: string) => {
+    setNumber(Number + value);
   };
   const backSpace = () => {
     setNumber(Number.slice(0, -1));
@@ -36,7 +36,7 @@ function App() {
       console.error(error);
     }
   };
-  const handleKeyPress = (e) => {
+  const handleKeyPress = (e: { key: string; keyCode: number }) => {
     if (e.key === "Enter") {
       calculate();
     } else if (e.key === "Backspace") {
@@ -82,95 +82,95 @@ function App() {
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}
             value="("
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("(")}
           />
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}
             value=")"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle(")")}
           />
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}
             value="Mod"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("%")}
           />
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}
             value="π"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("π")}
           />
 
           <Button
             bgColor={"dark:bg-gray-500 bg-white"}
             value="7"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("7")}
           />
           <Button
             bgColor={"dark:bg-gray-500 bg-white"}
             value="8"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("8")}
           />
           <Button
             bgColor={"dark:bg-gray-500 bg-white"}
             value="9"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("9")}
           />
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}
             value="/"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("/")}
           />
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}
             value="√"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("π")}
           />
 
           <Button
             bgColor={"dark:bg-gray-500 bg-white"}
             value="4"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("4")}
           />
           <Button
             bgColor={"dark:bg-gray-500 bg-white"}
             value="5"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("5")}
           />
           <Button
             bgColor={"dark:bg-gray-500 bg-white"}
             value="6"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("6")}
           />
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}
             value="*"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("+")}
           />
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}
             value="x²"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("x")}
           />
 
           <Button
             bgColor={"dark:bg-gray-500 bg-white"}
             value="1"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("1")}
           />
           <Button
             bgColor={"dark:bg-gray-500 bg-white"}
             value="2"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("2")}
           />
           <Button
             bgColor={"dark:bg-gray-500 bg-white"}
             value="3"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("3")}
           />
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}
             value="-"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("-")}
           />
           <Button
             bgColor={"dark:bg-orange-500 row-span-2 bg-orange-500"}
@@ -181,22 +181,22 @@ function App() {
           <Button
             bgColor={"dark:bg-gray-500 bg-white"}
             value="0"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("0")}
           />
           <Button
             bgColor={"dark:bg-gray-500 bg-zinc-400"}
             value="."
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle(".")}
           />
           <Button
             bgColor={"dark:bg-gray-500 bg-zinc-400"}
             value="%"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("%")}
           />
           <Button
             bgColor={"dark:bg-gray-800 bg-zinc-400"}
             value="+"
-            onClick={ButtonHandle}
+            onClick={() => ButtonHandle("+")}
           />
         </div>
       </div>

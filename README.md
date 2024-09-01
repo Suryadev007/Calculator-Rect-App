@@ -27,7 +27,7 @@ npm i
 ### Step 4: start the app
 
 ```
-npm start
+npm run dev
 ```
 
 - Calculator react app now running on your localhost
